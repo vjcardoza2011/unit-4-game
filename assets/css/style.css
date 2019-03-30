@@ -1,0 +1,102 @@
+body {
+    background-image:url("../images/background-img.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: comic sans-serif;
+}
+
+#instructions {
+    background-color: white;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+}
+
+#randomNumDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 15%;
+    height: 15%;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#randomNum, #score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(119, 1, 113);
+    color: rgb(0, 255, 76);
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+#winLoss {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 15%;
+    height: 15%;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+#crystals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 75%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#totalScore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 15%;
+    height: 10%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#score {
+    color:  #66ccff;
+}
+p, strong {
+    font-size: 18px;
+}
+
+#winLoss, #randomNumDiv, #totalScore, #crystals, #instructions {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button {
+    box-shadow: 0 8px #a6a6a6;
+    display: block;
+    border-radius: 10px;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 0 4px #a6a6a6;
+    top: 2px;
+}
+
+button:active {
+    box-shadow: none;
+    top: 2px;
+}
+

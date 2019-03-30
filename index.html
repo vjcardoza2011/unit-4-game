@@ -1,0 +1,58 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="page-header">
+      <h1 class="text-center">Crystal Collector Game</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="instructions">
+            <strong><u>Instructions</u></strong>
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to the random number, you lose the game if your total score goes
+                above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the value of each crystal.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" id="randomNumDiv">
+            <p>Number to match: <div id="randomNum"></div></p>
+        </div>
+        <div class="col-md-4" id="winLoss">
+            <p>Wins:<span id="win"></span></p>
+            <p>Losses:<span id="loss"></span></p>
+        </div>
+            <div class="col-md-4" id="totalScore">
+                <p>Your total score is: <div id="score"></div></p>
+            </div>
+    </div>
+    <div class="row" id="crystals">
+        <div class="col-md-3">
+            <button  id="blue"><img src="assets/images/blue-crystal.jpg" width="250" height="400"></button>
+        </div>
+        <div class="col-md-3">
+            <button id="green"><img src="assets/images/green-crystal.jpg" width="250" height="400"></button>
+        </div>
+        <div class="col-md-3">
+            <button id="purple"><img src="assets/images/purple-crystal.jpg" width="250" height="400"></button>
+        </div>
+        <div class="col-md-3">
+            <button id="red"><img src="assets/images/red-crystal.jpg" width="250" height="400"></button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+  
+
+</body>
+</html>
